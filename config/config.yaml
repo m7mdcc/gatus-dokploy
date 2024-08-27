@@ -1,6 +1,6 @@
 endpoints:
   - name: Google
-    url: https://google.com
+    url: https://google.com.sa
     interval: 30s
     conditions:
       - "[STATUS] == 200"
