@@ -5,12 +5,12 @@ endpoints:
     conditions:
       - "[STATUS] == 200"
   - name: Github
-    url: https://github.com
+    url: https://github.com/
     interval: 30s
     conditions:
       - "[STATUS] == 200"
   - name: Yandex.com
-    url: https://yandex.com
+    url: https://yandex.com/
     interval: 30s
     conditions:
       - "[STATUS] == 200"
