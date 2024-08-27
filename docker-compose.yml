@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  gatus:
+    image: twinproduction/gatus:latest
+    ports:
+      - 8080
+    volumes:
+      - ./config:/config
+    labels:
+     - "traefik.enable=true"
+     - "traefik.http.routers.gatus.entrypoints=websecure"
+     - "traefik.http.routers.gatus.tls.certResolver=letsencrypt"
+     - "traefik.http.routers.gatus.rule=Host(`gatus.dc.mylabs.me`)"
+     - "traefik.http.services.gatus.loadbalancer.server.port=8080"
+    networks:
+      - dokploy-network
+ 
+networks:
+  dokploy-network:
+    external: true
