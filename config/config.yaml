@@ -14,5 +14,11 @@ endpoints:
     interval: 30s
     conditions:
       - "[STATUS] == 200"
+  - name: Bing.com
+    url: https://www.bing.com/
+    interval: 30s
+    conditions:
+      - "[STATUS] == 200"
+
 
       
