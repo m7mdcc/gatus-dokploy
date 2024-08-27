@@ -4,3 +4,8 @@ endpoints:
     interval: 30s
     conditions:
       - "[STATUS] == 200"
+  - name: Github
+    url: https://github.com
+    interval: 30s
+    conditions:
+      - "[STATUS] == 200"
