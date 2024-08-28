@@ -29,6 +29,14 @@ endpoints:
     interval: 30s
     conditions:
       - "[STATUS] == 200"
+  - name: Alarabiya
+    url: https://www.alarabiya.net/
+    interval: 30s
+    conditions:
+      - "[STATUS] == 200"
+  
+
+      
 
      
 
