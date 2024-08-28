@@ -5,7 +5,7 @@ services:
     ports:
       - 8080
     volumes:
-      - ./config:/config
+      - ./files:/config
     labels:
      - "traefik.enable=true"
      - "traefik.http.routers.gatus.entrypoints=websecure"
