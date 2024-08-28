@@ -6,6 +6,7 @@ services:
       - 8080
     volumes:
       - ./config:/config
+    restart: always
     labels:
      - "traefik.enable=true"
      - "traefik.http.routers.gatus.entrypoints=websecure"
