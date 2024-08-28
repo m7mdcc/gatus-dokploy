@@ -19,6 +19,14 @@ endpoints:
     interval: 30s
     conditions:
       - "[STATUS] == 200"
+  - name: Youtube.com
+    url: https://www.youtube.com
+    interval: 30s
+    conditions:
+      - "[STATUS] == 200"
+
+
+    
 
 
       
